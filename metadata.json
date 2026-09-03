@@ -1,0 +1,11 @@
+{
+  "name": "Remix CareQ",
+  "description": "AI-assisted medication companion that transforms complex prescriptions into simple, elderly-friendly medication schedules, reminders, and adherence tracking.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

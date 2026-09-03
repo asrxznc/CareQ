@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Q Ring Gradient -->
+    <linearGradient id="careq-ring-grad" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#39B54A" />
+      <stop offset="50%" stop-color="#12A89D" />
+      <stop offset="100%" stop-color="#087F8C" />
+    </linearGradient>
+    
+    <!-- Capsule Gradient -->
+    <linearGradient id="careq-pill-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#39B54A" />
+      <stop offset="100%" stop-color="#12A89D" />
+    </linearGradient>
+
+    <!-- Tail Gradient -->
+    <linearGradient id="careq-tail-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12A89D" />
+      <stop offset="100%" stop-color="#087F8C" />
+    </linearGradient>
+  </defs>
+
+  <!-- The Q Outer Ring -->
+  <circle cx="200" cy="165" r="96" fill="none" stroke="url(#careq-ring-grad)" stroke-width="42" stroke-linecap="round" />
+
+  <!-- Embedded Angled Medicine Capsule in Lower Left Ring -->
+  <!-- Center around (136, 212), rotated ~45 deg -->
+  <g transform="translate(136, 212) rotate(42)">
+    <!-- White Capsule outline & mask background -->
+    <rect x="-18" y="-38" width="36" height="76" rx="18" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="4" />
+    <!-- Lower Half filled with vibrant green -->
+    <path d="M -18,0 L 18,0 A 18,18 0 0,1 -18,0 Z" transform="translate(0, 19)" fill="url(#careq-pill-grad)" />
+    <!-- Outer boundary stroke of the capsule -->
+    <rect x="-18" y="-38" width="36" height="76" rx="18" fill="none" stroke="#FFFFFF" stroke-width="4.5" />
+    <!-- Divider line between capsule halves -->
+    <line x1="-18" y1="0" x2="18" y2="0" stroke="#FFFFFF" stroke-width="4" />
+  </g>
+
+  <!-- Q Tail: Angled rounded pill extending down-right -->
+  <g transform="translate(244, 214) rotate(42)">
+    <rect x="-17" y="-10" width="34" height="64" rx="17" fill="url(#careq-tail-grad)" />
+  </g>
+
+  <!-- CareQ Wordmark -->
+  <!-- "Care" in Navy, "Q" in vibrant Green -->
+  <g font-family="'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif" font-size="64" font-weight="800" text-anchor="middle" letter-spacing="-1">
+    <text x="180" y="325" fill="#102A43">Care<tspan fill="#39B54A">Q</tspan></text>
+  </g>
+
+  <!-- Tagline -->
+  <text x="200" y="356" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="600" fill="#6B7C93" text-anchor="middle" letter-spacing="0.2">
+    The Right Medicine. The Right Time.
+  </text>
+</svg>
