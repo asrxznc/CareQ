@@ -1,0 +1,1 @@
+CareQ is an AI-assisted medication management app designed for elderly users. It scans prescriptions using OCR and AI, extracts medicine names, dosage, timing, and instructions, then creates simple reminders and tracks Taken/Skipped status—making medication schedules easier, safer, and more manageable.
